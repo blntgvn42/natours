@@ -1,0 +1,32 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 56.25%; //1 rem = 9 px ::: 9px / 16px : 56.25%
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; //1 rem = 8 px ::: 8px / 16px : 50%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1 rem = 12 px ::: 12px / 16px : 75%
+    }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
+}

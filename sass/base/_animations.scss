@@ -1,0 +1,73 @@
+/* Animations */
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+/* animation-timing-function: ease-in; */
+/* animation-delay: 0.5s; */
+/* animation-iteration-count: 3; */
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-10rem, 10rem);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translate(10rem, -10rem);
+        /* transform: translate(100px, -100px) rotate(180deg); */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate(10rem, -10rem);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translate(-10rem, 10rem);
+        /* transform: translate(-100px, 100px) rotate(-180deg); */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
